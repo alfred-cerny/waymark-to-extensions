@@ -1,0 +1,10 @@
+{
+	"fields": {
+		"aboutPageTemplate": "About Page Template (HTML)",
+		"aboutPageText": "About Page Content (Markdown)"
+	},
+	"tooltips": {
+		"aboutPageTemplate": "Template used for the About page.\nAllowed placeholders: {{version}}, {{text}}.",
+		"aboutPageText": "Custom About page content. You can use Markdown syntax for formatting."
+	}
+}

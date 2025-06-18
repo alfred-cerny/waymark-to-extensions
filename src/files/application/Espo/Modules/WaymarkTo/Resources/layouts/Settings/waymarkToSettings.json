@@ -1,0 +1,20 @@
+[
+	{
+		"rows": [
+			[
+				{
+					"fullWidth": true,
+					"name": "aboutPageTemplate"
+				}
+			],
+			[
+				{
+					"fullWidth": true,
+					"name": "aboutPageText"
+				}
+			]
+		],
+		"tabBreak": true,
+		"tabLabel": "About Page Content"
+	}
+]

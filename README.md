@@ -1,3 +1,19 @@
+# WaymarkTo Core Extension for EspoCRM
+
+Advanced core extension providing view extension capabilities and other enhancements for EspoCRM.
+
+## Features
+
+- **View Extension System**: Extend any EspoCRM view without modifying core files
+- **Custom AMD Loader**: Enhanced module loader with `extend()` function support
+- **Performance Optimizations**: Improved loading and caching mechanisms
+
+## Documentation
+
+- [View Extensions Guide](docs/VIEW_EXTENSIONS.md) - Learn how to use the view extension system
+
+---
+
 # Template repository for EspoCRM extensions
 
 Create a repository for your extension from this template.
@@ -200,7 +216,7 @@ Run composer install for the site:
 Command to run unit tests:
 
 ```
-(npm run sync; cd site; vendor/bin/phpunit tests/unit/Espo/Modules/{@name})
+(npm run sync; cd site; vendor/bin/phpunit tests/unit/Espo/Modules/WaymarkCore)
 ```
 
 or
@@ -236,7 +252,7 @@ return [
 Command to run integration tests:
 
 ```
-(npm run sync; cd site; vendor/bin/phpunit tests/integration/Espo/Modules/{@name})
+(npm run sync; cd site; vendor/bin/phpunit tests/integration/Espo/Modules/WaymarkCore)
 ```
 
 or
@@ -261,7 +277,7 @@ or
 npm run sa
 ```
 
-If your extension contains additional PHP packages, you also need to add `site/custom/Espo/Modules/{@name}/vendor` to the *scanDirectories* section in *phpstan.neon* config.
+If your extension contains additional PHP packages, you also need to add `site/custom/Espo/Modules/WaymarkCore/vendor` to the *scanDirectories* section in *phpstan.neon* config.
 
 Note: You can omit *composer-install* command if your extension does not contain PHP packages.
 
@@ -273,8 +289,8 @@ You need to set the following paths to be ignored in your IDE:
 * `site/build`
 * `site/custom/`
 * `site/client/custom/`
-* `site/tests/unit/Espo/Modules/{@name}`
-* `site/tests/integration/Espo/Modules/{@name}`
+* `site/tests/unit/Espo/Modules/WaymarkCore`
+* `site/tests/integration/Espo/Modules/WaymarkCore`
 
 ### File watcher
 
@@ -295,13 +311,13 @@ The initialization script asks whether you want to use ES6 modules. It's recomme
 If you want to switch to ES6 later:
 
 1. Set *bundled* to true in `extension.json`.
-2. Set *bundled* and *jsTranspiled* to true in `src/files/custom/Espo/Modules/{@name}/Resources/module.json`.
-3. Add `src/files/custom/Espo/Modules/{@name}/Resources/metadata/app/client.json`
+2. Set *bundled* and *jsTranspiled* to true in `src/files/custom/Espo/Modules/WaymarkCore/Resources/module.json`.
+3. Add `src/files/custom/Espo/Modules/WaymarkCore/Resources/metadata/app/client.json`
     ```json
     {
         "scriptList": [
             "__APPEND__",
-            "client/custom/modules/{@nameHyphen}/lib/init.js"
+            "client/custom/modules/waymark/lib/init.js"
         ]
     }
     ```
@@ -320,12 +336,12 @@ In `extension.json`, add a command that will bundle the needed library into an A
 }
 ```
 
-Add the library module path to `src/files/custom/Espo/Modules/{@name}/Resources/metadata/app/jsLibs.json`
+Add the library module path to `src/files/custom/Espo/Modules/WaymarkCore/Resources/metadata/app/jsLibs.json`
 
 ```json
 {
     "some-lib": {
-        "path": "client/custom/modules/{@nameHyphen}/lib/some-lib.js"
+        "path": "client/custom/modules/waymark/lib/some-lib.js"
     }
 }
 ```

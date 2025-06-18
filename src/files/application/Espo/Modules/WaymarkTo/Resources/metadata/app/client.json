@@ -1,0 +1,8 @@
+{
+	"viewExtensions": {
+		"views/about": [
+			"__APPEND__",
+			"waymark-to:views/about"
+		]
+	}
+}

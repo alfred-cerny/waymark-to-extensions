@@ -1,0 +1,18 @@
+{
+	"fields": {
+		"aboutPageTemplate": {
+			"rows": 20,
+			"rowsMin": 15,
+			"tooltip": true,
+			"type": "wysiwyg",
+			"view": "waymark-to:views/settings/fields/about-page-template"
+		},
+		"aboutPageText": {
+			"rows": 20,
+			"rowsMin": 15,
+			"tooltip": true,
+			"type": "text",
+			"view": "waymark-to:views/settings/fields/about-page-text"
+		}
+	}
+}

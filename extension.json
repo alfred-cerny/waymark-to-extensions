@@ -1,14 +1,15 @@
 {
-    "module": "{@name}",
-    "name": "{@nameLabel}",
-    "description": "{@description}",
-    "author": "{@author}",
-    "bundled": {@bundled},
-    "acceptableVersions": [
-        ">=9.1.0"
-    ],
-    "php": [
-        ">=8.2"
-    ],
-    "scripts": []
+	"acceptableVersions": [
+		">=9.1.0"
+	],
+	"author": "Alfred Cerny",
+	"bundled": false,
+	"description": "Waymark.To Core Extension for EspoCRM",
+	"module": "WaymarkTo",
+	"name": "WaymarkTo",
+	"php": [
+		">=8.2"
+	],
+	"scripts": [
+	]
 }

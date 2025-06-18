@@ -1,28 +1,28 @@
 {
-  "name": "espocrm-ext-{@nameHyphen}",
-  "version": "0.0.1",
-  "description": "",
-  "scripts": {
-    "sa": "node build --copy && node build --composer-install && php site/vendor/bin/phpstan",
-    "unit-tests": "node build --copy && node build --composer-install && cd site && php vendor/bin/phpunit tests/unit/Espo/Modules/{ModuleName}",
-    "integration-tests": "node build --copy && node build --composer-install && cd site && php vendor/bin/phpunit tests/integration/Espo/Modules/{ModuleName}",
-    "copy": "node build --copy",
-    "composer-install": "node build --composer-install",
-    "sync": "node build --copy && node build --composer-install",
-    "extension": "node build --extension",
-    "clear-cache": "php site/clear_cache.php",
-    "rebuild": "node build --rebuild",
-    "all": "node build --all",
-    "prepare-test": "node build --prepare-test"
-  },
-  "type": "module",
-  "author": "{@author}",
-  "dependencies": {
-    "espo-extension-tools": "github:espocrm/extension-tools#0.3.6",
-    "fs-extra": "^9.0.0"
-  },
-  "engines": {
-    "npm": ">=8",
-    "node": ">=18"
-  }
+	"author": "Alfred Cerny",
+	"dependencies": {
+		"espo-extension-tools": "github:espocrm/extension-tools#0.3.6",
+		"fs-extra": "^9.0.0"
+	},
+	"description": "Waymark.To Core Extension for EspoCRM",
+	"engines": {
+		"node": ">=18",
+		"npm": ">=8"
+	},
+	"name": "waymark-to",
+	"scripts": {
+		"all": "node build --all",
+		"clear-cache": "php site/clear_cache.php",
+		"composer-install": "node build --composer-install",
+		"copy": "node build --copy",
+		"extension": "node build --extension",
+		"integration-tests": "node build --copy && node build --composer-install && cd site && php vendor/bin/phpunit tests/integration/Espo/Modules/WaymarkTo",
+		"prepare-test": "node build --prepare-test",
+		"rebuild": "node build --rebuild",
+		"sa": "node build --copy && node build --composer-install && php site/vendor/bin/phpstan",
+		"sync": "node build --copy && node build --composer-install",
+		"unit-tests": "node build --copy && node build --composer-install && cd site && php vendor/bin/phpunit tests/unit/Espo/Modules/WaymarkTo"
+	},
+	"type": "module",
+	"version": "0.0.1"
 }

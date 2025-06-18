@@ -1,0 +1,7 @@
+[
+	{
+		"route": "/App/about",
+		"method": "get",
+		"actionClassName": "Espo\\Modules\\WaymarkTo\\Tools\\App\\Api\\GetAbout"
+	}
+]

@@ -1,0 +1,13 @@
+{
+    "name": "waymark-to/core",
+    "description": "WaymarkTo Core Extension for EspoCRM",
+    "type": "espocrm-extension",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Espo\\Modules\\WaymarkTo\\": "src/files/custom/Espo/Modules/WaymarkTo/"
+        }
+    }
+}

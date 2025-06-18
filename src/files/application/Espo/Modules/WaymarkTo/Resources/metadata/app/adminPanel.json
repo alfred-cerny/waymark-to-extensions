@@ -1,0 +1,12 @@
+{
+	"waymarkToSettings": {
+		"itemList": [
+			{
+				"iconClass": "fas fa-info-circle",
+				"label": "Waymark Settings",
+				"recordView": "waymark-to:views/admin/waymark-to-settings",
+				"url": "#Admin/waymarkToSettings"
+			}
+		]
+	}
+}
