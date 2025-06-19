@@ -5,9 +5,9 @@ namespace Espo\Modules\WaymarkTo\Tools\App\Api;
 use Espo\Core\Api\Request;
 use Espo\Core\Api\Response;
 use Espo\Core\Api\ResponseComposer;
+use Espo\Core\Utils\Config;
 use Espo\Core\Utils\Resource\FileReader;
 use Espo\Tools\App\Api\GetAbout as GetAboutBase;
-use Espo\Core\Utils\Config;
 
 class GetAbout extends GetAboutBase {
 	public function __construct(

@@ -1,0 +1,8 @@
+{
+	"clientHelper": {
+		"className": "Espo\\Modules\\WaymarkTo\\Tools\\Client\\Helper"
+	},
+	"clientManager": {
+		"loaderClassName": "Espo\\Modules\\WaymarkTo\\Core\\Loaders\\ClientManager"
+	}
+}

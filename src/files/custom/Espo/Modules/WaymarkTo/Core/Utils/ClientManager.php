@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Espo\Modules\WaymarkTo\Core\Utils;
 
 use Espo\Core\Di;
-use Espo\Core\Utils\ClientManager as BaseClientManager;
 use Espo\Core\Utils\Client\RenderParams;
+use Espo\Core\Utils\ClientManager as BaseClientManager;
 use Espo\Modules\WaymarkTo\Core\Di as WaymarkDi;
 
 class ClientManager extends BaseClientManager implements
@@ -17,7 +17,7 @@ class ClientManager extends BaseClientManager implements
 	use Di\MetadataSetter;
 	use WaymarkDi\ClientHelperSetter;
 
-	protected string $mainHtmlFilePath = 'application/Espo/Modules/WaymarkTo/Resources/html/main.tpl';
+	protected string $mainHtmlFilePath = 'custom/Espo/Modules/WaymarkTo/Resources/html/main.tpl';
 
 	public function display(?string $runScript = null, ?string $htmlFilePath = null, array $vars = []): void {
 		$htmlFilePath ??= $this->mainHtmlFilePath;

@@ -11,9 +11,8 @@ use Espo\Core\Utils\Language;
 use Espo\Core\Utils\Metadata;
 use Espo\Core\Utils\ThemeManager;
 use Espo\Entities\Preferences;
-use Espo\Entities\User;
-use RuntimeException;
 use ReflectionMethod;
+use RuntimeException;
 
 class Helper {
 	public function __construct(
@@ -29,6 +28,7 @@ class Helper {
 	 * @param ClientManager $clientManager
 	 * @param array<string, mixed> $vars
 	 * @return array<string, mixed>
+	 * @throws \JsonException
 	 */
 	public function prepareVars(ClientManager $clientManager, array $vars = []): array {
 		$extensionMap = $this->metadata->get(['app', 'client', 'viewExtensions'], []);

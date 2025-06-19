@@ -15,7 +15,7 @@
 	 * @requires Espo.loader
 	 */
 
-	const MODULE_PATH_REGEX = /\/client\/modules\/([^\/]+)\/src\/(.+?)\.js/;
+	const MODULE_PATH_REGEX = /\/client\/(?:custom\/)?modules\/([^\/]+)\/src\/(.+?)\.js/;
 	const MODULE_ID_SPLIT_REGEX = /:(.+)$/;
 	const TRANSPILED_PATH_REGEX = /\/client\/lib\/transpiled\/src\/(.+?)\.js/;
 
@@ -183,14 +183,14 @@
 			// Filter out transpiled paths and extender.js itself from stack trace
 			const lines = stack.split('\n');
 			let moduleId = null;
-			
+
 			for (const line of lines) {
 				// Skip transpiled paths
 				if (TRANSPILED_PATH_REGEX.test(line)) continue;
-				
+
 				// Skip extender.js itself
 				if (line.includes('/extender.js')) continue;
-				
+
 				// Look for actual module paths
 				const match = line.match(MODULE_PATH_REGEX);
 				if (match) {
