@@ -1,0 +1,11 @@
+{
+	"Global": {
+		"primaryKeyComposition": {
+			"fieldDefs": {
+				"tooltip": true,
+				"type": "varchar"
+			},
+			"location": "recordDefs"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"fields": {
+		"primaryKeyComposition": "Primary key composition"
+	},
+	"tooltips": {
+		"primaryKeyComposition": "Define your own rules for ID composition, you may use all available entity fields.\n\nExample: `{assetId}` will set the id to value of field `assetId`."
+	}
+}
