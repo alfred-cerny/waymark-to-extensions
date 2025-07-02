@@ -1,0 +1,31 @@
+{
+	"fields": {
+		"coordinateSystem": "Coordinate System",
+		"geoJsonType": "GeoJSON Type",
+		"maxFeatures": "Maximum Features",
+		"validateGeometry": "Validate Geometry",
+		"allowedGeometryTypes": "Allowed Geometry Types"
+	},
+	"options": {
+		"coordinateSystem": {
+			"WGS84": "WGS84 (GPS)",
+			"WebMercator": "Web Mercator"
+		},
+		"allowedGeometryTypes": {
+			"LineString": "LineString",
+			"Point": "Point",
+			"Polygon": "Polygon"
+		},
+		"geoJsonType": {
+			"Feature": "Feature",
+			"FeatureCollection": "FeatureCollection",
+			"GeometryCollection": "GeometryCollection",
+			"LineString": "LineString",
+			"MultiLineString": "MultiLineString",
+			"MultiPoint": "MultiPoint",
+			"MultiPolygon": "MultiPolygon",
+			"Point": "Point",
+			"Polygon": "Polygon"
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"fieldTypes": {
+		"geoJson": "GeoJSON"
+	},
+	"fields": {
+		"geoJson": "GeoJSON Data"
+	},
+	"labels": {
+		"Add Coordinate": "Add Coordinate",
+		"Add Property": "Add Property",
+		"Altitude": "Altitude",
+		"Coordinates": "Coordinates",
+		"Drag to reorder": "Drag to reorder",
+		"GeoJSON Type": "GeoJSON Type",
+		"Invalid GeoJSON": "Invalid GeoJSON",
+		"Latitude": "Latitude",
+		"Longitude": "Longitude",
+		"Minimum 2 coordinates required": "Minimum 2 coordinates required",
+		"Minimum 4 coordinates required": "Minimum 4 coordinates required",
+		"Move Down": "Move Down",
+		"Move Up": "Move Up",
+		"Polygon will be automatically closed": "Polygon will be automatically closed",
+		"Properties": "Properties",
+		"Property Name": "Property Name",
+		"Set Coordinate": "Set Coordinate",
+		"Valid GeoJSON": "Valid GeoJSON",
+		"Value": "Value",
+		"View GeoJSON Data": "View GeoJSON Data",
+		"optional": "optional"
+	},
+	"messages": {
+		"LineString must have at least 2 positions": "LineString must have at least 2 positions",
+		"Point can only have one coordinate": "Point can only have one coordinate",
+		"Polygon must have at least 4 positions": "Polygon must have at least 4 positions"
+	}
+}

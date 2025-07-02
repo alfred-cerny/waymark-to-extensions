@@ -1,0 +1,9 @@
+{
+	"tooltips": {
+		"allowedGeometryTypes": "GeoJson types the user can choose from.",
+		"defaultGeometryType": "When using Feature type, this determines the geometry type for the coordinate input UI.",
+		"geoJsonType": "The type of GeoJSON object this field should accept. Default is Feature which allows single geographic features with properties.",
+		"maxFeatures": "For FeatureCollection type, limits the maximum number of features that can be stored. Range: 1-1000.",
+		"validateGeometry": "When enabled, the field will validate that the GeoJSON conforms to the specification including coordinate bounds checking."
+	}
+}

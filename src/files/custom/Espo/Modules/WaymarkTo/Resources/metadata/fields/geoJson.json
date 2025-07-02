@@ -1,0 +1,89 @@
+{
+	"actualFields": [
+		"geometryType"
+	],
+	"fieldDefs": {
+		"type": "jsonObject"
+	},
+	"fields": {
+		"geometryType": {
+			"default": "Polygon",
+			"options": [
+				"Point",
+				"LineString",
+				"Polygon",
+				"MultiPoint",
+				"MultiLineString",
+				"MultiPolygon"
+			],
+			"tooltip": true,
+			"type": "enum"
+		}
+	},
+	"filter": true,
+	"fullTextSearch": false,
+	"notActualFields": [
+	],
+	"notCreatable": false,
+	"orderDisabled": true,
+	"params": [
+		{
+			"default": false,
+			"name": "required",
+			"type": "bool"
+		},
+		{
+			"default": false,
+			"name": "readOnly",
+			"type": "bool"
+		},
+		{
+			"default": "Feature",
+			"name": "geoJsonType",
+			"options": [
+				"Feature",
+				"FeatureCollection",
+				"GeometryCollection"
+			],
+			"tooltip": true,
+			"type": "enum"
+		},
+		{
+			"default": [
+				"Polygon"
+			],
+			"name": "allowedGeometryTypes",
+			"options": [
+				"Point",
+				"LineString",
+				"Polygon",
+				"MultiPoint",
+				"MultiLineString",
+				"MultiPolygon"
+			],
+			"tooltip": true,
+			"type": "multiEnum"
+		},
+		{
+			"default": "WGS84",
+			"name": "coordinateSystem",
+			"options": [
+				"WGS84",
+				"WebMercator"
+			],
+			"type": "enum"
+		},
+		{
+			"default": true,
+			"name": "validateGeometry",
+			"tooltip": true,
+			"type": "bool"
+		}
+	],
+	"textFilter": false,
+	"validations": [
+		"required",
+		"geoJson"
+	],
+	"view": "waymark-to:views/fields/geo-json"
+}
