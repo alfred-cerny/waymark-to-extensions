@@ -3,6 +3,10 @@
 		"views/about": [
 			"__APPEND__",
 			"waymark-to:views/about"
+		],
+		"views/site/footer": [
+			"__APPEND__",
+			"waymark-to:views/site/footer"
 		]
 	}
 }

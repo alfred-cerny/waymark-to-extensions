@@ -15,6 +15,18 @@
 			]
 		],
 		"tabBreak": true,
-		"tabLabel": "About Page Content"
+		"tabLabel": "$label:About Page Content"
+	},
+	{
+		"rows": [
+			[
+				{
+					"fullWidth": true,
+					"name": "footer"
+				}
+			]
+		],
+		"tabBreak": true,
+		"tabLabel": "$label:Footer"
 	}
 ]

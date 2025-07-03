@@ -26,7 +26,9 @@
 		"Valid GeoJSON": "Valid GeoJSON",
 		"Value": "Value",
 		"View GeoJSON Data": "View GeoJSON Data",
-		"optional": "optional"
+		"optional": "optional",
+		"About Page Content": "About Page Content",
+		"Footer": "Footer"
 	},
 	"messages": {
 		"LineString must have at least 2 positions": "LineString must have at least 2 positions",

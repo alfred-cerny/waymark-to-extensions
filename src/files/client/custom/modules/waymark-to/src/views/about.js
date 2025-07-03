@@ -18,8 +18,10 @@ extend((Dep) => {
 			}
 			const templateContent = this.options?.templateContent || this.getConfig().get('aboutPageTemplate') || undefined;
 			if (templateContent) {
-				this.template = undefined;
+				this.template = false;
 				this.templateContent = templateContent;
+			} else {
+				this.template = 'about';
 			}
 		}
 

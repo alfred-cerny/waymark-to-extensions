@@ -1,10 +1,16 @@
 {
 	"fields": {
 		"aboutPageTemplate": "About Page Template (HTML)",
-		"aboutPageText": "About Page Content (Markdown)"
+		"aboutPageText": "About Page Content (Markdown)",
+		"footer": "Footer Content"
 	},
 	"tooltips": {
 		"aboutPageTemplate": "Template used for the About page.\nAllowed placeholders: {{version}}, {{text}}.",
-		"aboutPageText": "Custom About page content. You can use Markdown syntax for formatting."
+		"aboutPageText": "Custom About page content. You can use Markdown syntax for formatting.",
+		"footer": "This content will appear in the application footer. Use {year} placeholder for the current year."
+	},
+	"messages": {
+		"footerValidation": "Footer content must contain a link to EspoCRM (>EspoCRM<)",
+		"footerPreviewNote": "This preview shows how your footer will appear in the application."
 	}
 }

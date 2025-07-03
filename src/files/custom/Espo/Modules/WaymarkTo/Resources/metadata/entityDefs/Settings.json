@@ -13,6 +13,11 @@
 			"tooltip": true,
 			"type": "text",
 			"view": "waymark-to:views/settings/fields/about-page-text"
+		},
+		"footer": {
+			"type": "wysiwyg",
+			"tooltip": true,
+			"view": "waymark-to:views/settings/fields/footer"
 		}
 	}
 }
